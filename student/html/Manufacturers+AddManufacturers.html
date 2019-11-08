@@ -1,0 +1,38 @@
+<script>
+   /*$(function datePicker() {
+        $("#founded").datepicker();
+       $("#founded").datepicker("option", "dateFormat", "yy-mm-dd");
+    });*/
+</script>
+<div id="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Name:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Name of the car..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Country:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="country" name="country" placeholder="Country of the manufacturer..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="founded">Founded:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="founded"  name="founded" onmouseover="datePicker()" placeholder="Date when founded..">
+            </div>
+        </div>
+        <br>
+        <div class="row2">
+            <button class="submit" onclick="addManufacturer()">Add</button>
+            <button class="submit" onclick="reset2()">Reset</button>
+        </div>
+</div>
+<div id="dynamicTable" class="dynamicTable"></div>

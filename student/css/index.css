@@ -1,0 +1,155 @@
+body{
+    background-image: url("../images/BVi34co.jpg");
+}
+#list{
+    height: calc(100vh - 50px);
+    width: 200px;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 1;
+    background-color: #389466;
+    border-radius: 10px;
+    transition-property: top, bottom, width;
+    transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-timing-function: linear, linear, ease;
+    display: block;
+}
+#list2{
+    height: 100%;
+    width: 200px;
+    background-color: #389466;
+    border-radius: 10px;
+    margin-left: -7px;
+    margin-top: -8px;
+    display: none;
+    transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-timing-function: linear, linear, ease;
+}
+#logo, #logo2{
+    padding-top: 30px;
+    padding-bottom:30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 3px #000000;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+#pageName {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 3px #000000;
+    color: rgba(139, 0, 0, 1);
+}
+#myDiv{
+    visibility: hidden;
+    width: 0px;
+}
+#logo:hover, #logo2:hover{
+    cursor: pointer;
+    color: white;
+}
+#main-content{
+    padding: 38px 5px 0px 205px;
+    transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-timing-function: linear, linear, ease;
+}
+@media screen and (max-width: 800px) {
+    #list {
+        width: 0px;
+    }
+}
+@media screen and (max-width: 800px) {
+     #myDiv{
+        visibility: visible;
+         width: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #pageName{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #main-content{
+        padding: 38px 0px 0px 0px;
+    }
+}
+.list-style{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height:  100%;
+}
+.list-element-stylev2{
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    list-style-type: circle;
+    text-shadow: 5px 5px 3px #000000;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.list-element:hover {
+    background-color:  #111111;
+}
+.line{
+    width: 80%;
+    margin: auto;
+}
+.header {
+    transition-property: top, bottom, width;
+    transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-timing-function: linear, linear, ease;
+    width: 100%;
+    height: 38px;
+    position: fixed;
+}
+.list-element-stylev2:hover{
+    color: white;
+    cursor: pointer;
+}
+.navbar-toggler{
+    padding-top: 5px;
+    font-size: 0.99925rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.navbar-toggler-bar {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 1px;
+    border-radius: 1px;
+    background: rgba(139, 0, 0, 1);
+}
+.navbar-toggler-bar.bar1 {
+    top: 0px;
+}
+.navbar-toggler-bar.bar2{
+    width: 17px;
+    margin-top: 7px;
+    outline: 1px solid transparent;
+    opacity: 1;
+}
+.navbar-toggler-bar.bar3{
+    margin-top: 7px;
+    bottom: 0px;
+    outline: 1px solid transparent;
+}
+@media screen and (max-width: 800px){
+    .header{
+        position: absolute;
+    }
+}

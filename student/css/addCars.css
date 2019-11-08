@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    vertical-align: middle;
+    color: white;
+}
+td, th {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #389466;
+    color: white;
+    font-weight: bold;
+}
+tr{
+    background-color: darkblue;
+}
+tr:nth-child(even){
+    background-color: #344675;
+}
+tr:hover {
+    background-color: darkred;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=text], select{
+      width: 100%;
+      padding: 12px;
+      border: 2.5px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      font-family: "Poppins", sans-serif;
+      background-color: #000000;
+      color: white;
+      font-weight: bold;
+  }
+input[type=date], select{
+    width: 100%;
+    padding: 12px;
+    border: 2.5px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+input[type=text]:hover,select:hover{
+    border-color: red;
+}
+input[type=text]:focus{
+    outline: none;
+    border-color: #389466;
+}
+input[type=submit] {
+    background-color: #000000;
+    border: 3px white solid #ccc;
+    color: white;
+    padding: 12px 20px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+input[type=submit]:hover {
+    background-color: red;
+}
+input[type=submit]:active {
+    background-color: #389466;
+}
+#container {
+    border-radius: 10px;
+    background-color: #344675;
+    padding: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    table {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit], #container
+    {
+        width: 100%;
+        margin-top: 0;
+        transition-property: top, bottom, width;
+        transition-duration: 0.2s, 0.2s, 0.35s;
+        transition-timing-function: linear, linear, ease;
+    }
+}
+@media screen and (max-width: 800px) {
+    #container {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .col-75 {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+.submit{
+    background-color: #000000;
+    border: 3px white solid #ccc;
+    color: white;
+    padding: 12px 20px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: red;
+}
+.submit:active{
+    background-color: #389466;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-25 {
+    float: left;
+    width: 6%;
+    margin-top: 7px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.col-75 {
+    float: right;
+    width: 94%;
+    margin-top: 6px;
+    padding-left: 80px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
