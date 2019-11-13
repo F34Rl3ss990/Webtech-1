@@ -5,30 +5,8 @@ function createCarsTable(){
                 ["name", "consumption", "color","manufacturer", "available", "year","horsepower"]);
     });
 }
-/*function addCar(){
-    addFunction(["name", "consumption", "color", "manufacturer", "available", "year", "horsepower"]);
-    if(y==-1) {
-        $.post("addCar", newArray).done(function () {
-            createCarsTable();
-        })
-            .fail(function () {
-                alert("Manufacturer already exists");
-            });
-        y = 0;
-    }else{
-        y=0;
-        return;
-    }
-}*/
+
 function addCar() {
-    /*var a = document.getElementById("name").value;
-    var b = document.getElementById("consumption").value;
-    var c = document.getElementById("color").value;
-    var d = document.getElementById("manufacturer").value;
-    var e = document.getElementById("available").value;
-    var f = document.getElementById("year").value;
-    var g = document.getElementById("horsepower").value;
-    */
     var a = $("#name").val();
     var b = $("#consumption").val();
     var c = $("#color").val();

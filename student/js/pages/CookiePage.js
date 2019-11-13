@@ -1,5 +1,4 @@
 function cookies() {
-    //  var name = $('#name').val();
     document.cookie = "name="+$('#name').val();
     console.log(document.cookie);
     $.get("manufacturer", (document.cookie), function(req,res) {

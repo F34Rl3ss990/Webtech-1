@@ -7,14 +7,6 @@ function createTable (headerNames, data, tableDatas)  {
     });
     header += "</tr>";
     table.append(header);
-    /* for (let i = 0;i < data.length;i++) {
-         let row = "<tr>";
-         tableDatas.map(tableData => {
-             row += "<td>" + data[i][tableData] + "</td>";
-         });
-         row += "</tr>";
-         table.append(row);
-     };*/
     for (let i =0; i<data.length;i++){
         let row ="<tr>";
         for (let j=0; j<tableDatas.length;j++){
@@ -32,31 +24,8 @@ function isNumber (num){
 function nullorEmpty(src){
     return src == null || src ==="";
 }
-/*
-var y = 0;
-let newArray = {};
-function addFunction(inputTextNames) {
-    let x;
-    for (let i = 0; i < inputTextNames.length; i++) {
-        x = document.getElementById(inputTextNames[i]).value;
-        if (x === "" || x==null) {
-            alert("Wrong " + inputTextNames[i] + " input");
-            y++;
-        } else{
-            newArray[inputTextNames[i]] = x;
-        }
-    }
-    y--;
-    return newArray;
-}*/
+
 function reset() {
-   /* document.getElementById('name').value= '';
-    document.getElementById('color').value= '';
-    document.getElementById('consumption').value= '1l/100km';
-    document.getElementById('manufacturer').value= '';
-    document.getElementById('available').value= '';
-    document.getElementById('year').value= '';
-    document.getElementById('horsepower').value= '';*/
     $("#name").val("");
     $("#color").val("");
     $("#consumption").val("1l/100km");
@@ -64,13 +33,8 @@ function reset() {
     $("#available").val("");
     $("#year").val("");
     $("#horsepower").val("");
-
-
 };
 function reset2(){
-    /*document.getElementById('name').value= '';
-    document.getElementById('country').value= '';
-    document.getElementById('founded').value= '';*/
     $("#name").val("");
     $("#country").val("");
     $("#founded").val("");
@@ -101,7 +65,6 @@ function toggleFunction(){
 function myFunction(zs) {
     var y = document.getElementById("header");
     var a = document.getElementById("main-content");
-
     if(zs.matches && (c%2)!=0){
         myHelpFunction().style.display = "block";
         if(y.style.marginLeft== "0px") {
@@ -142,18 +105,17 @@ function cookie(x) {
         }
     });
 }
+
 function datePicker() {
     $("#founded").datepicker();
     $("#founded").datepicker("option", "dateFormat", "mm-dd-yy");
 };
-
 
 function convertDate(src){
     var x = src.split("-");
     var year = x[2];
     var month = x[0];
     var day = x[1];
-
 
         switch (month) {
         case '01':
