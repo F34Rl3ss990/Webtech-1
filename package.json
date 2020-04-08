@@ -1,10 +1,10 @@
 {
-  "name": "webtech2",
+  "name": "webtech1",
   "version": "0.0.0",
-  "description": "webtech2",
+  "description": "webtech1",
   "main": "app.js",
   "author": {
-    "name": "Sátán Ádám"
+    "name": "Becze Dániel"
   },
   "dependencies": {},
   "devDependencies": {
